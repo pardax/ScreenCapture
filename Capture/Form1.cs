@@ -41,7 +41,6 @@ namespace Capture
                 this.FormBorderStyle = FormBorderStyle.None;
                 this.Location = new Point(0, 0);
                 this.Size = Screen.PrimaryScreen.Bounds.Size;
-
                 var fullScreen = Screen.PrimaryScreen.Bounds;
 
                 capWindow = new Bitmap(fullScreen.Width, fullScreen.Height);
@@ -63,7 +62,7 @@ namespace Capture
             }
             else if(e.KeyChar == 'e')
             {
-                soundPlayer.SoundLocation = @"..\..\wav\eraser.wav";
+                soundPlayer.SoundLocation = @"..\..\wav\ereser.wav";
                 soundPlayer.Play();
 
                 isCaptured = false;
